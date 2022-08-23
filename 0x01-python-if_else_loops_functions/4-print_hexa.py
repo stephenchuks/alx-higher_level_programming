@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for c in range(ord(0), ord(100)):
-    print(f"{(c)}, end=''")
+for n in range(0, 99):
+    print(f"{(n)} = {hex(n)}")
 

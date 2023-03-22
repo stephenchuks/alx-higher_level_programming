@@ -1,23 +1,20 @@
-## Javascript - Objects, Scopes, and Closures
-> This repo shows examples of how to use Javascript with regards to: objects, classes, super, extends, prototypes, inheritance, and closures.
+# 0x13. Javascript - Objects, Scopes and Closures
 
-### Resources:
-* [this, self binding](https://alistapart.com/article/getoutbindingsituations)
+## Description
+The aim of this project is to understand the concepts of objects, scopes and closures in javascript.
+We also learn about the 'this' and 'undefined' keywords, and how to inherit an object from another.
 
-### Description of files
-* 0-4 - class Rectangle takes width, height, and has methods print, rotate, double
-* 5-6 - class Square extends Rectangle with ```super``` constructor and modified print method
-* 7 - function count num occurences in list
-* 8 - function reverses list items
-* 9 - function prints items, in numeric order
-* 10 - converts bases using ```num.toString(base)``` method
-* 100 - imports list from another file and maps into new list, values multiplied by index
-* 101 - imports dictionary from another file and receates dic based on unique values
-* 102 - script concatenates given files (Usage: ```./102-concat.js fileA fileB fileC)
-
-### Environment
-* Language: Javascript ES6, Node v6.10.2
-* OS: Ubuntu 14.04 LTS
-* Style guidelines: [Javascript Standard](https://standardjs.com/rules.html) || [Javascript Semistandard](https://github.com/Flet/semistandard) || [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
-
-
+## Table of contents
+Files | Description
+----- | -----------
+[0-rectangle.js](./0-rectangle.js) | empty class Rectangle that defines a rectangle
+[1-rectangle.js](./1-rectangle.js) | class Rectangle that defines a rectangle
+[2-rectangle.js](./2-rectangle.js) | class Rectangle that defines a rectangle
+[3-rectangle.js](./3-rectangle.js) | class Rectangle that defines a rectangle
+[4-rectangle.js](./4-rectangle.js) | class Rectangle that defines a rectangle
+[5-square.js](./5-square.js) | class Square that defines a square and inherits from Rectangle of 4-rectangle.js
+[6-square.js](./6-square.js) | class Square that defines a square and inherits from Square of 5-square.js
+[7-occurrences.js](./7-occurrences.js) | JS function that returns the number of occurrences in a list
+[8-esrever.js](./8-esrever.js) | JS function that returns the reversed version of a list
+[9-logme.js](./9-logme.js) | JS function that prints the number of arguments already printed and the new argument value
+[10-converter.js](./10-converter.js) | JS function that converts a number from base 10 to another base passed as argument

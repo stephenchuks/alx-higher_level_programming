@@ -1,3 +1,7 @@
 #!/usr/bin/node
 
-module.exports = class Rectangle {};
+// Rectangle class (module) decleration:
+
+class Rectangle {
+}
+module.exports = Rectangle;

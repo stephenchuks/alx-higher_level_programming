@@ -1,24 +1,29 @@
 #!/usr/bin/node
 
-module.exports = class Rectangle {
+// Class Rectangle that defines a rectangle with 3 instance methods:
+
+class Rectangle {
   constructor (w, h) {
-    if (w > 0 && h > 0) {
+    if (((w = parseInt(w)) > 0) && ((h = parseInt(h)) > 0)) {
       this.width = w;
       this.height = h;
     }
   }
+
   print () {
-    for (let col = 0; col < this.height; col += 1) {
-      console.log('X'.repeat(this.width));
-    }
+    console.log(('X'.repeat(this.width) + '\n').repeat(this.height - 1) + 'X'.repeat(this.width));
   }
+
   rotate () {
-    let tmp = this.width;
-    this.width = this.height;
-    this.height = tmp;
+    const h = this.height;
+    const w = this.width;
+    this.width = h;
+    this.height = w;
   }
+
   double () {
-    this.width *= 2;
     this.height *= 2;
+    this.width *= 2;
   }
-};
+}
+module.exports = Rectangle;

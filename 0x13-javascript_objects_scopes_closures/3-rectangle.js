@@ -1,15 +1,19 @@
 #!/usr/bin/node
 
-module.exports = class Rectangle {
+// Rectangle class that defines a rectangle with 
+// an instance methode called print() that prints
+// the rectagle using the character X:
+
+class Rectangle {
   constructor (w, h) {
-    if (w > 0 && h > 0) {
+    if (((w = parseInt(w)) > 0) && ((h = parseInt(h)) > 0)) {
       this.width = w;
       this.height = h;
     }
   }
+
   print () {
-    for (let col = 0; col < this.height; col += 1) {
-      console.log('X'.repeat(this.width));
-    }
+    console.log(('X'.repeat(this.width) + '\n').repeat(this.height - 1) + 'X'.repeat(this.width));
   }
-};
+}
+module.exports = Rectangle;

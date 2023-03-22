@@ -1,13 +1,9 @@
 #!/usr/bin/node
 
-const dict = require('./101-data').dict;
+const { dict } = require('./101-data');
 
-let newDic = {};
-for (let key in dict) {
-  if (newDic[dict[key]] === undefined) {
-    newDic[dict[key]] = [];
-  }
-  newDic[dict[key]].push(key);
-}
-
-console.log(newDic);
+const myValue = Object.entries(dict).reduce((acc, [key, value]) => {
+  acc[value] = acc[value] ? [...acc[value], key] : [key];
+  return acc;
+}, {});
+console.log(myValue);

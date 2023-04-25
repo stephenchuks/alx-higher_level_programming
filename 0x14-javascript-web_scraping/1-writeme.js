@@ -8,4 +8,3 @@ fs.writeFile(file, text, 'utf8', (err) => {
     console.log(err);
   }
 });
-
